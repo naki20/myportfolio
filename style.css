@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000000; /* changed from pink to black */
+    color: #ffffff;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+/* Header with Wave Effect */
+header {
+    background: linear-gradient(to bottom, #000000, #333333); /* darker gradient */
+    color: #e1f2f7;
+    padding: 60px 20px;
+    font-size: 1.8em;
+    font-weight: bold;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    clip-path: ellipse(80% 100% at center top);
+}
+
+
+/* Profile Image - Even Smaller */
+.profile {
+    margin-top: -10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 3px solid #ffffff; /* white for contrast */
+    outline: 3px dashed #888888; /* light grey */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+
+/* Sections with Fancy Borders */
+section {
+    padding: 50px 20px;
+    margin: 30px auto;
+    width: 80%;
+    background: #1a1a1a; /* dark background */
+    border-radius: 20px;
+    border: 4px solid transparent;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Fancy Gradient Border Effect */
+section::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(45deg, #666, #888, #aaa); /* subtle greys */
+    z-index: -1;
+    border-radius: 20px;
+    opacity: 0.5;
+}
+
+/* Hover Effect */
+section:hover {
+    transform: scale(1.02);
+    border: 4px dashed #ffffff; /* white dashed border on hover */
+}
+
+/* Fancy Contact Button */
+.contact-button {
+    display: block;
+    text-align: center;
+    width: 200px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    background: linear-gradient(45deg, #cccccc, #999999); /* light to mid grey */
+    text-decoration: none;
+    border-radius: 50px;
+    border: 3px solid white;
+    outline: 3px dashed #ffffff;
+    margin: 20px auto;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.contact-button:hover {
+    background: linear-gradient(45deg, #999999, #cccccc);
+    transform: translateY(-3px);
+}
+
+/* Fancy Social Links */
+.social {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 3px solid white;
+    outline: 3px dashed #ffffff;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.instagram { background: #333333; color: white; }
+.linkedin { background: #444444; color: white; }
+.github { background: #555555; color: white; }
+
+.social:hover {
+    background: white;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+/* Skills Image - Reduce Size */
+#skills img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background: #111111; /* dark footer */
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 1em;
+    box-shadow: 0px -4px 10px rgba(255, 255, 255, 0.1);
+    border-top: 8px double #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content img {
+        width: 120px;
+    }
+}
+.custom-section {
+    background: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+
+#form-status {
+    font-size: 1.1em;
+    color: #00ff88;
+    background-color: #111;
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid #00ff88;
+    display: inline-block;
+    margin-top: 10px;
+}
+
